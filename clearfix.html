@@ -1,0 +1,52 @@
+<doctype! html>
+<header>
+	<title>Clearfix</title>
+	<style>
+		body {
+			width: 620px;
+			margin: 0 auto;
+			font-family: Rockwell,sans-serif;
+			color: ;
+			background-color: #194F3F;
+		}
+		aside {
+			color: #A0578E;
+			background-color: #709F89;
+		}
+		h1, h2, h3, h4 {
+			color: #A0578E;
+		}
+		a {
+			color: #3B496F;
+		}
+	</style>
+</header>
+<body>
+	<h1>Clearfix</h1>
+	<section>
+		<h2>What I've Learned</h2>
+		<p>Clearfix is a method to avoid float collapse. Multiple techniques, codes, or hacks can avoid float collapse visually, but there are reasons to not use most of these.</p>
+		<section>
+			<h3>Methods</h3>
+			<section>
+				<h4>Empty Div</h4>
+				<p>This is the fastest and simplest way to fix a float collapse, but it is completely <strong>wrong</strong> semantically. The way to do this, even though you shouldn't, is to put in an empty div sectioning element after the element floated. It looks good, but it isn't. Don't do this.</p>
+			</section>
+			<section>
+				<h4>Overflow</h4>
+				<p>Another way to fix the problem is to set the parent element's overflow settings to auto. This works semantically, but is really meant to be used on elements of set sizes to create scrollbars instead of extremely lengthy element boxes.</p>
+			</section>
+			<section>
+				<h4>Easy Clearing</h4>
+				<p>The current most correct technique to resolve float collapse is to use an additional class onto the floated element. To do this, you must include the after psuedo selector to a class <em>(in this case, clearfix)</em>. That class must then be added to the floating element.</p>
+			</section>
+		</section>
+	</section>
+	<aside>
+		<h2>Resources</h2>
+		<ul>
+			<li><a href="http://css-tricks.com/all-about-floats/">CSS Tricks</a>
+			<li><a href="http://www.quirksmode.org/css/clearing.html">Quirks Mode</a>
+		</ul>
+	</aside>
+</body>
