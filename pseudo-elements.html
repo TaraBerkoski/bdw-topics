@@ -26,13 +26,16 @@
 	<h1>Pseudo Elements</h1>
 	<section>
 		<h2>What I've Learned</h2>
-		<p></p>
+		<p>Pseudo elements are used in CSS to create an invisible, or fake, element on a webpage. This selector targets a specifically defined element and becomes a child of that element. For example: #element:after means that this psuedo element will be placed after all content within this element, but still in that element itself. Psuedo elements are used to create design and decorate components without affecting semantics.</p>
+		<p>Within these psuedo elements, it is important and necessary to include the content property. Without this, a psuedo element is useless and basically non-existent. The inserted element is inline by default. To change this, the disply property must be included and may be set to block or table. After that, things like height, padding, and margins may be included and defined. They inherit the same font stylings of the element, but those can also be changed.</p>
+		<p>Psuedo element content can be applied or removed conditionally dependant on viewport. 
+		<p>Use of psuedo elements includes clear floats, more easily and quickly use various shapes, and show full text of attributes such as links or titles for printed pages. Pseudo elements by its very nature are not critical as they are decorative or additive to the actual content of the html.</p>
 	</section>
 	<aside>
 		<h2>Resources</h2>
 		<ul>
-			<li><a href=""></a>
-			<li><a href=""></a>
+			<li><a href="http://coding.smashingmagazine.com/2011/07/13/learning-to-use-the-before-and-after-pseudo-elements-in-css/">Smashing Magazine</a>
+			<li><a href="http://css-tricks.com/pseudo-element-roundup/">CSS Tricks</a>
 		</ul>
 	</aside>
 </body>
