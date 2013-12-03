@@ -1,0 +1,50 @@
+<doctype! html>
+<html>
+<header>
+	<title>CSS Positioning</title>
+	<style>
+		body {
+			width: 620px;
+			margin: 0 auto;
+			font-family: Rockwell,sans-serif;
+			color: ;
+			background-color: #194F3F;
+		}
+		aside {
+			color: #A0578E;
+			background-color: #709F89;
+		}
+		h1, h2, h3, h4 {
+			color: #A0578E;
+		}
+		a {
+			color: #3B496F;
+		}
+	</style>
+</header>
+<body>
+	<h1>CSS Positioning</h1>
+	<section>
+		<h2>What I've Learned</h2>
+		<p>There are four positioning options in CSS. These include: static, relative, absolute, and fixed.</p>
+		<p>Static is the default position. This means that the elements flow as they normally would.</p>
+		<p>Relative moves the element in relation to the static position.</p>
+		<p>Absolute moves the element in relation to the closest ancestor element that has a relative (or absolute) position.</p>
+		<p>Fixed sets the element in relation to the viewport.</p>
+	</section>
+	<section>
+		<h2>Example</h2>
+		<p>This paragraph has a static positioning.</p>
+		<p style="position:relative;left:100px;">This paragraph has a relative position.</p>
+		<p style="position:absolute;left:250px; bottom: 235px;">This paragraph has an absolute position. It is relative to the body.</p>
+		<p style="position:fixed; bottom:200px;">This paragraph has a fixed position.</p>
+	</section>
+	<aside>
+		<h2>Resources</h2>
+		<ul>
+			<li><a href="http://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">CSS Tricks</a>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Mozilla Developer Network</a>
+		</ul>
+	</aside>
+</body>
+</html>
